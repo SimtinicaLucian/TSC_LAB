@@ -4,7 +4,3 @@
 ../lab02_clocking_blocks/tb_ifc.sv
 ../lab02_clocking_blocks/instr_register_test.sv
 ../lab02_clocking_blocks/top.sv                    +incdir+../lab02_clocking_blocks
-
-../../../lab5/classes/instr_register_test.sv
-../../../lab5/classes/tb_ifc.sv
-../../../lab5/classes/top.sv
