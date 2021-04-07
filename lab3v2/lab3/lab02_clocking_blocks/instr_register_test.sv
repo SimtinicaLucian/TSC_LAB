@@ -34,14 +34,13 @@ module instr_register_test (tb_ifc ifc);  // interface port
     repeat (2) @ifc.cb ;  // hold in reset for 2 clock cycles
     ifc.cb.reset_n       <= 1'b1;       // assert reset_n (active low)
  
-
     $display("\nWriting values to register stack...");
     @ifc.cb ifc.load_en = 1'b1;  // enable writing to register
     repeat (3) begin
       @ifc.cb randomize_transaction;
       @ifc.cb print_transaction;
     end
-    @ifc.cb ifc.load_en = 1'b0;  // turn-off writing to register
+    @ifc.cb ifc.load_en <= 1'b0;  // turn-off writing to register
 
     // read back and display same three register locations
     $display("\nReading back the same register locations written...");

@@ -1,0 +1,45 @@
+# Reading C:/modeltech64_10.6d/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.6d Feb 24 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do run.do
+# 1
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 16:27:09 on Apr 07,2021
+# vlog -reportprogress 300 -sv -timescale 1ps/1ps -work work -f sources.txt 
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling interface tb_ifc
+# -- Compiling module instr_register_test
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 16:27:09 on Apr 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -quiet -nocoverage "+notimingchecks" "+nowarnTSCALE" -sva top 
+# Start time: 16:27:09 on Apr 07,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/Lucian/Desktop/TSC_LAB/lab3/lab3/sim/work.top
+# Refreshing C:/Users/Lucian/Desktop/TSC_LAB/lab3/lab3/sim/work.instr_register_pkg
+# Refreshing C:/Users/Lucian/Desktop/TSC_LAB/lab3/lab3/sim/work.tb_ifc
+# Refreshing C:/Users/Lucian/Desktop/TSC_LAB/lab3/lab3/sim/work.instr_register_test
+# Refreshing C:/Users/Lucian/Desktop/TSC_LAB/lab3/lab3/sim/work.instr_register
+# ** Error: invalid command name "clk"
+# Error in macro ./wave.do line 1
+# invalid command name "clk"
+#     while executing
+# "clk = 1'h1"
+# End time: 16:27:36 on Apr 07,2021, Elapsed time: 0:00:27
+# Errors: 3, Warnings: 1
